@@ -1,14 +1,15 @@
-Зрівняння послідовного виконання java та через бібліотеку mpj.
-Ідея зрівння полягає в парсингу пдф сторінок депутатського голосування. Пдф лежать в папці votings.
-Результат парсинга одної сторінки - PdfData.class.
-У тестовий вибірці 11 файлів. На кожний файл запускається свій окремий процес.
+## Java MPI library compare to consistent processing.
+Comparing is going thought parsing pdf files of the deputy vorings.</br>
+Pdf files are stored in /votings directory</br>
+Result of the one page parsing - PdfData.class</br>
+Test dataset contains 11 files.</br>
+In MPI, I run one process for each file</br>
 
- 
 RUN\
-Послідовне:
+consistent:
 `запустити метод main в класі Lab1`
 MPI:  
-`-jar ~/ParallelProgramming/mpj-v0_44/lib/starter.jar Lab2 -np 11` - де "-np" - кількість процесів
+`-jar ~/ParallelProgramming/mpj-v0_44/lib/starter.jar Lab2 -np 11` - where "-np" - process count
 
 Consistance processing
 page 0 parsed 3499015484 nanosec\
@@ -37,5 +38,4 @@ Page 5 parsed 23317646876 nanosec\
 Page 4 parsed 24487975801 nanosec\
 all pages parsed 24487975801 nanosec\
 
-Як ми бачимо розпаралелення по процесах йде швидше. 
-Також пришвидшить відносний результат збільшення файлів та сторінок в них.
+Macbook'13 2014, 8 RAM
