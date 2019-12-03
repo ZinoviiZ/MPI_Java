@@ -1,4 +1,5 @@
 ## Java MPI library compare to consistent processing.
+
 Comparing is going thought parsing pdf files of the deputy vorings.</br>
 Pdf files are stored in /votings directory</br>
 Result of the one page parsing - PdfData.class</br>
